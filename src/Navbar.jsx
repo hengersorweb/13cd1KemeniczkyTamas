@@ -1,11 +1,19 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+
+
 
 const Navbar = (() => {
 
     return(
         <div>
-            <h1>Menü</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi expedita at cumque asperiores aspernatur repellat aliquam harum quod deserunt, ullam, officia praesentium atque alias perferendis inventore, ex beatae necessitatibus? Minima, deleniti adipisci maiores labore hic, reiciendis cum exercitationem officia quia possimus neque dolorem commodi quasi mollitia debitis temporibus maxime necessitatibus qui pariatur provident amet, dignissimos ab. Repudiandae nihil, eligendi molestias eos quidem veniam magnam obcaecati veritatis tenetur possimus ducimus natus officia sit excepturi molestiae velit, nesciunt facere ad ullam sed! Facere, sapiente totam? Magni error eligendi labore vero, nemo eum totam, at adipisci quae autem itaque earum, dolore dicta est.</p>
+            <nav>
+                <Link to="/">Főoldal </Link>
+                <NavLink to="/ermesek">Az olimpia érmesei </NavLink>
+                <NavLink to="/mermesek">A magyar érmesek </NavLink>
+
+
+            </nav>
         </div>
     )
 }
